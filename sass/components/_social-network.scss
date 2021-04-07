@@ -1,0 +1,48 @@
+.social__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    transition: background-color 250ms 
+         cubic-bezier(0.4, 0, 0.2, 1),
+         color 250ms 
+         cubic-bezier(0.4, 0, 0.2, 1); 
+
+         &:hover,
+         &:focus {
+             background-color: var(--accent-color);
+             color: #FFF;
+         }     
+}
+
+.social__icon {
+    fill: currentColor;
+}
+
+.twitter {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.facebook {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.instagram {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.linkedin {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
