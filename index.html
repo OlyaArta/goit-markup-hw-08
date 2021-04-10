@@ -49,7 +49,7 @@
                         +38 096 111 11 11</a>
                 </li>    
             </ul>
-            <button type="button" class="burger__btn is-open" data-menu-button>
+            <button type="button" class="burger__btn" data-menu-button>
                 <svg class="burger__icon" width="40" height="40">
                     <use href="./images/sprite.svg#icon-menu_40px"></use>
                 </svg>
@@ -99,15 +99,15 @@
         </div>
     </header>
     <main>
-       <!--Hero-->
-    <section class="hero__section hero">
+       <!-- Hero -->
+     <section class="hero__section hero">
             <div class="hero__container container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
             </div>    
-        </section>
+        </section> 
         <!--Skills-->
-    <section class="skills section">
+     <section class="skills section">
             <div class="skills__container container">
                 <h2 class="visually-hidden">Основные навыки</h2>
                 <ul class="skills__set list">
@@ -153,32 +153,59 @@
                     </li>
                 </ul>
             </div>    
-        </section>
+        </section>  
         <!--what_we_do-->
         <section class="activities">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="activities__list list">
                    <li class="activities__item">
-                      <img src="images/img.jpg" 
-                      alt="человек печатает" height="294" width="370">
+                    <picture>
+                        <source srcset="./images/studio/activities/image-01.webp 1x,
+                                        ./images/studio/activities/image-01@2x.webp 2x"
+                          media="(min-width: 1200px)" type="image/webp"/>
+                        <source srcset="./images/studio/activities/image-01.jpg 1x,
+                                        ./images/studio/activities/image-01@2x.jpg 2x"
+                          media="(min-width: 1200px)"/>
+                        <img src="./images/studio/activities/image-01.jpg"
+                             alt="мужчина работает за компьютерным столом"
+                             height="294"/>
+                      </picture>
                       <p class="activities__text">Десктопные приложения</p>
                    </li>
                    <li class="activities__item">
-                      <img src="images/img-1.jpg" 
-                      alt="человек работает со смартфоном" height="294" width="370">
+                    <picture>
+                        <source  srcset="./images/studio/activities/image-02.webp 1x,
+                                         ./images/studio/activities/image-02@2x.webp 2x"
+                          media="(min-width: 1200px)" type="image/webp"/>
+                        <source srcset="./images/studio/activities/image-02.jpg 1x,
+                                        ./images/studio/activities/image-02@2x.jpg 2x"
+                          media="(min-width: 1200px)"/>
+                        <img src="./images/studio/activities/image-02.jpg"  
+                             alt="человек пишет мобильное приложение"  
+                             height="294" />
+                      </picture>
                       <p class="activities__text">Мобильные приложения</p>
                    </li>
                    <li class="activities__item">
-                      <img src="images/img-2.jpg" 
-                      alt="человек рабоатет с планшетом" height="294" width="370">
+                    <picture>
+                        <source srcset="./images/studio/activities/image-03.webp 1x,
+                                        ./images/studio/activities/image-03@2x.webp 2x"
+                          media="(min-width: 1200px)" type="image/webp" />
+                        <source srcset="./images/studio/activities/image-03.jpg 1x,
+                                        ./images/studio/activities/image-03@2x.jpg 2x"
+                          media="(min-width: 1200px)" />
+                        <img src="./images/studio/activities/image-03.jpg"
+                             alt="веб-дизайнер выбирает цвет из палитры"
+                             height="294" />
+                      </picture>
                       <p class="activities__text">Дизайнерские решения</p>
                    </li>
                 </ul>
             </div>    
         </section>
         <!--our team-->
-       <section class="team section">
+   <!--    <section class="team section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team__list list">
@@ -388,8 +415,8 @@
               </div>  
         
         </section>
-    </main>
-    <footer class="footer">
+    </main> --> 
+  <!--   <footer class="footer">
         <div class="footer__container container">
             <div class="footer-box">
                <a class="footer-box__logo link" href=""><span class="logo__web">Web</span>Studio</a>
@@ -510,6 +537,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script> --> 
+  </main>  
 </body>
 </html>

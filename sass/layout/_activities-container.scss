@@ -1,10 +1,23 @@
+/*@media screen and (max-width: 767px) {
+    .activities {
+      display: none;
+    }
+  }*/
+
+/*@media screen and (min-width: 768px) {
+    .activities {
+      display: none;
+    }
+ }  */
+
+@media screen and (min-width: 1200px) {
 .activities {
     padding-bottom: 94px;
-}
+ }
 
 .activities__list {
     display: flex;
-}
+ }
 
 .activities__item {
     position: relative;
@@ -12,7 +25,7 @@
     &:not(:last-child) {
         margin-right: 30px;
     }
-}
+ }
 
 .activities__text {
     position: absolute;
@@ -29,4 +42,5 @@
     text-transform: uppercase;
     padding-top: 27px;
     padding-bottom: 27px;
-} 
+  }
+}
