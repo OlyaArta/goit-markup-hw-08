@@ -58,6 +58,11 @@
 
 @media screen and (min-width: 1200px) {
 
+    .skills {
+        display: flex;
+        justify-content: center;
+    }    
+
     .skills__set {
         display: flex;
         justify-content: space-between;
@@ -75,8 +80,8 @@
 }    
 
 
-
-/*.skills__container {
+/*
+.skills__container {
     display: flex;
 }
 
@@ -116,4 +121,4 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-}*/
+}  */

@@ -65,7 +65,7 @@ img {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 448px;
     margin: 0 auto;
@@ -541,30 +541,20 @@ img {
   }
   .header {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding-top: 21px;
     padding-bottom: 21px;
     border-bottom: 1px solid #ececec;
     background-color: #ffffff;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .navigation__list {
+  .navigation {
     display: flex;
     align-items: center;
+  }
+  .navigation__list {
+    display: flex;
+    margin-left: auto;
   }
   .navigation__item:not(:last-child) {
     margin-right: 50px;
@@ -645,6 +635,20 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px;
+    color: #ECECEC;
+  }
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation {
+    display: flex;
+  }
   .navigation__list {
     display: flex;
     align-items: center;
@@ -698,9 +702,11 @@ img {
     display: flex;
     align-items: center;
     margin-left: auto;
+    flex-direction: row;
   }
   .information__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0px;
   }
   .information__link {
     display: flex;
@@ -794,6 +800,8 @@ img {
 @media screen and (min-width: 768px) {
   .hero__section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-tablet.jpg");
+    min-height: 400px;
+    max-width: 765px;
   }
 }
 
@@ -807,6 +815,13 @@ img {
   .hero__title {
     max-width: 360px;
   }
+  .hero__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -815,7 +830,11 @@ img {
     padding-bottom: 200px;
     min-height: 600px;
     max-width: 1600px;
+    display: flex;
+    justify-content: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -950,6 +969,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
   .skills__set {
     display: flex;
     justify-content: space-between;
@@ -964,7 +987,8 @@ img {
   }
 }
 
-/*.skills__container {
+/*
+.skills__container {
     display: flex;
 }
 
@@ -1004,19 +1028,21 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-}*/
-/*@media screen and (max-width: 767px) {
-    .activities {
-      display: none;
-    }
-  }*/
-/*@media screen and (min-width: 768px) {
-    .activities {
-      display: none;
-    }
- }  */
+}  */
+.activities {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .activities {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .activities {
+    display: flex;
+    justify-content: space-around;
     padding-bottom: 94px;
   }
   .activities__list {
