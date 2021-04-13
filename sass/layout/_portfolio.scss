@@ -1,6 +1,7 @@
 .menu-nav {
     background-color: #ffffff;
     padding-top: 60px;
+    margin: 0 auto;
   }
   
   /* --- filter---*/
@@ -14,7 +15,7 @@
     display: inline-block;
     &:not(:last-child) {
       margin-right: 8px;
-      margin-bottom: 15px;
+  
     }
   }
   

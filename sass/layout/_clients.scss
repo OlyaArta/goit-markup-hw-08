@@ -15,6 +15,9 @@
   
   .clients__list {
     display: flex;
+    flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
   }
   
   .clients__item {
@@ -59,13 +62,13 @@
       line-height: 1.18;
     }
   
-    .clients__list {
-      flex-wrap: wrap;
-      margin-left: -30px;
-    }
-  
     .clients__item {
       flex-basis: calc(100% / 2 - 30px);
+    }
+    @media screen and (max-width: 767px) {
+      .container {
+        width: 480px;
+      }
     }
 
   @media screen and (min-width: 768px) {
@@ -81,6 +84,10 @@
     .clients__link {
       width: 226px;
       height: 90px;
+    }
+
+    .container {
+      margin: 0 auto;
     }
   }
   

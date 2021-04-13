@@ -1,6 +1,7 @@
 .skills__container {
     padding-top: 45px;
     padding-bottom: 45px;
+    margin: 0 auto;
 }
 
 .skills__box {
@@ -53,6 +54,11 @@
 
     .skills__title {
         text-align: start;
+    }
+
+    .section {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 

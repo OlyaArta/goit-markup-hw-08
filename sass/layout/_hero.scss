@@ -76,7 +76,9 @@
         url('../images/bg/hero-tablet.jpg');
         min-height: 400px;
         max-width: 765px;
+        margin: 0 auto;
     }
+    
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -94,6 +96,7 @@
       flex-direction: column;
       padding-bottom: 118px;
       padding-top: 118px;
+      
     }
   }
 
@@ -124,6 +127,11 @@
       max-width: 696px;
       font-size: 44px;
       line-height: 1.36;
+    }
+
+    .hero__container {
+      padding-top: 0;
+      padding-bottom: 0;
     }
     
 }
